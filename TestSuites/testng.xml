@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Application Automation Suite">
+	<listeners>
+		<listener class-name="com.amitlearning.testcomponents.MyListeners" />
+	</listeners>
+	<test thread-count="5" name="Regression TestCases">
+		<classes>
+			<class name="com.amitlearning.testcases.T2_RegisterTest" />
+			<class name="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" />
+			<class name="com.amitlearning.testcases.T3_SearchTest" />
+		</classes>
+	</test> <!-- Regression TestCases -->
+</suite> <!-- Application Automation Suite -->

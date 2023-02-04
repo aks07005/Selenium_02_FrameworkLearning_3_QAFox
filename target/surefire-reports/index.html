@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Application_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Application Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Application_Automation_Suite" class="navigator-link ">
+                    <span>D:\Workspace\Selenium_02_FrameworkLearning_3_QAFox\TestSuites\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Application_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Application_Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Application_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Application_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Application_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Application_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 1 failed,  1 skipped,  14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Application_Automation_Suite" class="hide-methods failed suite-Application_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Application_Automation_Suite -->
+                      <a href="#" panel-name="suite-Application_Automation_Suite" class="show-methods failed suite-Application_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Application_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Application_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T3_SearchTest" class="method navigator-link" hash-for-method="verifySearchWithInValidProduct">verifySearchWithInValidProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Application_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Application_Automation_Suite" class="hide-methods skipped suite-Application_Automation_Suite"> (hide)</a> <!-- hide-methods skipped suite-Application_Automation_Suite -->
+                      <a href="#" panel-name="suite-Application_Automation_Suite" class="show-methods skipped suite-Application_Automation_Suite"> (show)</a> <!-- show-methods skipped suite-Application_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Application_Automation_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T3_SearchTest" class="method navigator-link" hash-for-method="verifySearchWithoutAnyProduct">verifySearchWithoutAnyProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Application_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Application_Automation_Suite" class="hide-methods passed suite-Application_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Application_Automation_Suite -->
+                      <a href="#" panel-name="suite-Application_Automation_Suite" class="show-methods passed suite-Application_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Application_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Application_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithInValidCredentials">verifyLoginWithInValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithInValidEmailAndValidPassword">verifyLoginWithInValidEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(aks0007@gmail.com, 12345)">verifyLoginWithValidCredentials(aks0007@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(aks007@gmail.com, 12345)">verifyLoginWithValidCredentials(aks007@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(aks07@gmail.com, 12345)">verifyLoginWithValidCredentials(aks07@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(amotooricap9@gmail.com, 12345)">verifyLoginWithValidCredentials(amotooricap9@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithValidEmailAndInValidPassword">verifyLoginWithValidEmailAndInValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T1_LoginTestDataFromExcelTest" class="method navigator-link" hash-for-method="verifyLoginWithoutProvidingCredentials">verifyLoginWithoutProvidingCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T2_RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountByProvidingAllFields">verifyRegisteringAccountByProvidingAllFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T2_RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountByProvidingExistingEmailAddress">verifyRegisteringAccountByProvidingExistingEmailAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T2_RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountWithoutFillingAnyDetails">verifyRegisteringAccountWithoutFillingAnyDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T2_RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAnAccountWithMandatoryFields">verifyRegisteringAnAccountWithMandatoryFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T3_SearchTest" class="method navigator-link" hash-for-method="verifySearchWithValidProduct">verifySearchWithValidProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Application_Automation_Suite" title="com.amitlearning.testcases.T3_SearchTest" class="method navigator-link" hash-for-method="verifySearchWithValidProductOnLogin">verifySearchWithValidProductOnLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Application_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Application_Automation_Suite" class="panel Application_Automation_Suite">
+          <div class="suite-Application_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amitlearning.testcases.T3_SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithInValidProduct">
+                  </a> <!-- verifySearchWithInValidProduct -->
+                  <span class="method-name">verifySearchWithInValidProduct</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unexpected product display expected [abcd] but found [There is no product that matches the search criteria.]
+	at com.amitlearning.testcases.T3_SearchTest.verifySearchWithInValidProduct(T3_SearchTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Application_Automation_Suite-class-failed -->
+          <div class="suite-Application_Automation_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.amitlearning.testcases.T3_SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithoutAnyProduct">
+                  </a> <!-- verifySearchWithoutAnyProduct -->
+                  <span class="method-name">verifySearchWithoutAnyProduct</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.amitlearning.testcases.T3_SearchTest.verifySearchWithoutAnyProduct() on instance com.amitlearning.testcases.T3_SearchTest@35cabb2a depends on not successfully finished methods 
+[com.amitlearning.testcases.T3_SearchTest.verifySearchWithValidProduct() on instance com.amitlearning.testcases.T3_SearchTest@35cabb2a
+com.amitlearning.testcases.T3_SearchTest.verifySearchWithInValidProduct() on instance com.amitlearning.testcases.T3_SearchTest@35cabb2a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Application_Automation_Suite-class-skipped -->
+          <div class="suite-Application_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.amitlearning.testcases.T1_LoginTestDataFromExcelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInValidCredentials">
+                  </a> <!-- verifyLoginWithInValidCredentials -->
+                  <span class="method-name">verifyLoginWithInValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInValidEmailAndValidPassword">
+                  </a> <!-- verifyLoginWithInValidEmailAndValidPassword -->
+                  <span class="method-name">verifyLoginWithInValidEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials(aks0007@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentials(aks0007@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <span class="parameters">(aks0007@gmail.com,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials(aks007@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentials(aks007@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <span class="parameters">(aks007@gmail.com,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials(aks07@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentials(aks07@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <span class="parameters">(aks07@gmail.com,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials(amotooricap9@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentials(amotooricap9@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <span class="parameters">(amotooricap9@gmail.com,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidEmailAndInValidPassword">
+                  </a> <!-- verifyLoginWithValidEmailAndInValidPassword -->
+                  <span class="method-name">verifyLoginWithValidEmailAndInValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithoutProvidingCredentials">
+                  </a> <!-- verifyLoginWithoutProvidingCredentials -->
+                  <span class="method-name">verifyLoginWithoutProvidingCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Application_Automation_Suite-class-passed -->
+          <div class="suite-Application_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.amitlearning.testcases.T2_RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountByProvidingAllFields">
+                  </a> <!-- verifyRegisteringAccountByProvidingAllFields -->
+                  <span class="method-name">verifyRegisteringAccountByProvidingAllFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountByProvidingExistingEmailAddress">
+                  </a> <!-- verifyRegisteringAccountByProvidingExistingEmailAddress -->
+                  <span class="method-name">verifyRegisteringAccountByProvidingExistingEmailAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountWithoutFillingAnyDetails">
+                  </a> <!-- verifyRegisteringAccountWithoutFillingAnyDetails -->
+                  <span class="method-name">verifyRegisteringAccountWithoutFillingAnyDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAnAccountWithMandatoryFields">
+                  </a> <!-- verifyRegisteringAnAccountWithMandatoryFields -->
+                  <span class="method-name">verifyRegisteringAnAccountWithMandatoryFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Application_Automation_Suite-class-passed -->
+          <div class="suite-Application_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.amitlearning.testcases.T3_SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithValidProduct">
+                  </a> <!-- verifySearchWithValidProduct -->
+                  <span class="method-name">verifySearchWithValidProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithValidProductOnLogin">
+                  </a> <!-- verifySearchWithValidProductOnLogin -->
+                  <span class="method-name">verifySearchWithValidProductOnLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Application_Automation_Suite-class-passed -->
+        </div> <!-- panel Application_Automation_Suite -->
+        <div panel-name="test-xml-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Workspace\Selenium_02_FrameworkLearning_3_QAFox\TestSuites\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Application Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.amitlearning.testcomponents.MyListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression TestCases&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amitlearning.testcases.T2_RegisterTest&quot;/&gt;
+      &lt;class name=&quot;com.amitlearning.testcases.T1_LoginTestDataFromExcelTest&quot;/&gt;
+      &lt;class name=&quot;com.amitlearning.testcases.T3_SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression TestCases --&gt;
+&lt;/suite&gt; &lt;!-- Application Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Application Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression TestCases (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Application Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Application Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Application_Automation_Suite');
+function tableData_Application_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySearchWithValidProductOnLogin')
+data.setCell(0, 2, 'com.amitlearning.testcases.T3_SearchTest')
+data.setCell(0, 3, 1168);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyRegisteringAccountByProvidingAllFields')
+data.setCell(1, 2, 'com.amitlearning.testcases.T2_RegisterTest')
+data.setCell(1, 3, 922);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyRegisteringAnAccountWithMandatoryFields')
+data.setCell(2, 2, 'com.amitlearning.testcases.T2_RegisterTest')
+data.setCell(2, 3, 915);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyRegisteringAccountByProvidingExistingEmailAddress')
+data.setCell(3, 2, 'com.amitlearning.testcases.T2_RegisterTest')
+data.setCell(3, 3, 880);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginWithValidCredentials')
+data.setCell(4, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(4, 3, 582);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginWithValidCredentials')
+data.setCell(5, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(5, 3, 567);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoginWithValidCredentials')
+data.setCell(6, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(6, 3, 519);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginWithInValidCredentials')
+data.setCell(7, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(7, 3, 514);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginWithValidCredentials')
+data.setCell(8, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(8, 3, 510);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLoginWithInValidEmailAndValidPassword')
+data.setCell(9, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(9, 3, 506);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginWithValidEmailAndInValidPassword')
+data.setCell(10, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(10, 3, 486);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyRegisteringAccountWithoutFillingAnyDetails')
+data.setCell(11, 2, 'com.amitlearning.testcases.T2_RegisterTest')
+data.setCell(11, 3, 400);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifySearchWithInValidProduct')
+data.setCell(12, 2, 'com.amitlearning.testcases.T3_SearchTest')
+data.setCell(12, 3, 380);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifySearchWithValidProduct')
+data.setCell(13, 2, 'com.amitlearning.testcases.T3_SearchTest')
+data.setCell(13, 3, 371);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyLoginWithoutProvidingCredentials')
+data.setCell(14, 2, 'com.amitlearning.testcases.T1_LoginTestDataFromExcelTest')
+data.setCell(14, 3, 311);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifySearchWithoutAnyProduct')
+data.setCell(15, 2, 'com.amitlearning.testcases.T3_SearchTest')
+data.setCell(15, 3, 0);
+window.suiteTableData['Application_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Application_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <div id="times-div-Application_Automation_Suite">
+              </div> <!-- times-div-Application_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Application Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Application_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amitlearning.testcases.T2_RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAnAccountWithMandatoryFields</span>
+                <span class="method-start">6345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7262 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountByProvidingAllFields</span>
+                <span class="method-start">13118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">14162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountByProvidingExistingEmailAddress</span>
+                <span class="method-start">20028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20908 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">21085 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountWithoutFillingAnyDetails</span>
+                <span class="method-start">26682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27082 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amitlearning.testcases.T1_LoginTestDataFromExcelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">27915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(amotooricap9@gmail.com, 12345)</span>
+                <span class="method-start">33356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34113 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(aks07@gmail.com, 12345)</span>
+                <span class="method-start">39784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40303 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40446 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(aks007@gmail.com, 12345)</span>
+                <span class="method-start">46423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">47118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(aks0007@gmail.com, 12345)</span>
+                <span class="method-start">53051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">53562 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">53741 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInValidCredentials</span>
+                <span class="method-start">59474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">60178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInValidEmailAndValidPassword</span>
+                <span class="method-start">66243 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66750 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">66929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidEmailAndInValidPassword</span>
+                <span class="method-start">73003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">73489 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">73696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithoutProvidingCredentials</span>
+                <span class="method-start">79235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79546 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amitlearning.testcases.T3_SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">79734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithValidProduct</span>
+                <span class="method-start">85523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">86037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySearchWithInValidProduct</span>
+                <span class="method-start">91400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">92009 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithoutAnyProduct</span>
+                <span class="method-start">92182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">92182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithValidProductOnLogin</span>
+                <span class="method-start">97775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">98944 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
